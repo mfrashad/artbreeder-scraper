@@ -35,6 +35,12 @@ python download.py urls.txt --output images --delay 60
 ```
 This will download urls in `urls.txt` and save it into `images` directory. It will also wait for 60 s every 1000 images to prevent API limit.
 
+### 3. Expand Image to Square (Optional)
+Some images are portrait or landscape. As the purpose of this script is to collect image for GAN training. You can run the following script to expand the image into a square.
+```
+python preprocess.py input_dir -o output_dir
+```
+
 ## License
 This project is under license from MIT. For more details, see the LICENSE file.
 
